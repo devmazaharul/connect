@@ -1,0 +1,13 @@
+input{
+border: 1px solid rgb(228, 225, 225);
+margin: 10px 0px;
+    width: 100%;
+    padding: 6px 8px;
+    outline: none;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.loginbtn{
+    font-weight: 500;
+}

@@ -25,3 +25,22 @@ body {
     text-wrap: balance;
   }
 }
+
+.primaryText{
+  color: #ad55ff;
+
+}
+
+.primaryBg{
+  background: #ad55ff;
+  color: rgb(241, 236, 236);
+}
+
+table tr td{
+  border:1px solid gray;
+  padding:3px
+}
+table th td{
+  border:1px solid gray;
+  padding:3px
+}
