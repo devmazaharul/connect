@@ -26,7 +26,7 @@ const [state, setstate] = useState({})
       }
     }
     getCurrentuserinfo()
-  },[])
+  },[userToken])
 
 
 

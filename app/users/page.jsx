@@ -4,7 +4,7 @@ import toast from 'react-hot-toast'
 import { apiurl } from '../config/info'
 import Link from 'next/link'
 import  Axios from 'axios'
-export default function page() {
+export default function Getusers() {
     
     const [users, setusers] = useState([])
     const [err, setErr] = useState('')

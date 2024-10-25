@@ -86,9 +86,9 @@ export default function Login() {
 
           <div className="text-center w-fit mx-auto  px-3">
             <p className="text-center">
-              Don't have an account?
+              Do not have an account?
               <Link className="text-indigo-600" href={"/register"}>
-                {" "}
+           
                 Register
               </Link>
             </p>
