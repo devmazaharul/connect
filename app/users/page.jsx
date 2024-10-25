@@ -66,7 +66,7 @@ export default function Getusers() {
        </thead>
        <tbody>
          {users.map((user)=>(
-             <tr>
+             <tr key={Math.random()}>
                  <td>{user._id}</td>
                  <td>{user.fullname}</td>
                  <td>{user.email}</td>
