@@ -41,7 +41,7 @@ const [state, setstate] = useState({})
         <main className='flex gap-2 items-center'>
           <Image width={100} height={100} className='profilemage shadow-md'  alt="prfile image" src={'/mazaharul-islam.png'} />
           <div>
-            <p>{state.fullname}</p>
+            <p className='capitalize'>{state.fullname}</p>
             <p className='text-sm text-gray-500'>{state.userStatus}</p>
           </div>
         </main>

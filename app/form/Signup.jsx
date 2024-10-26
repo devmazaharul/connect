@@ -16,6 +16,7 @@ export default function Signup() {
   const [state, setState] = useState({ ...signupObj });
 
   const [loading, setloading] = useState(false);
+  const [mail, setmail] = useState('')
   const handleChange = (name, value) => {
     setState({ ...state, [name]: value });
   };
@@ -39,6 +40,7 @@ export default function Signup() {
         if (status == 200) {
           toast.success(data.message);
           setloading(false);
+          setmail(`Account creation successful.Please check your email ${state.email} and verify your account  ` )
           setState({ ...signupObj });
         } else if (status == 201) {
           toast.error(data.message);
@@ -118,6 +120,11 @@ export default function Signup() {
                 </Link>
               </p>
             </div>
+            {mail && (
+              <div className="bg-emerald-100">
+                <p className="p-2 rounded-sm ">{mail} </p>
+              </div>
+            )}
 
             <div className="more w-fit text-center">
               <small>

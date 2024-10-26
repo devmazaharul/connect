@@ -12,6 +12,7 @@ export default function Reset() {
   };
 
   const [state, setState] = useState({ ...forgetObj });
+  const [mail, setmail] = useState('')
 
   const [loading, setloading] = useState(false);
 
@@ -27,7 +28,7 @@ export default function Reset() {
         const { data, status } = await Axios.post(apiurl + "reset", state);
         console.log(data);
         if (status == 200) {
-          toast.success(data.message);
+          setmail(`Plese check your Email  And use this pasword.` )
           setloading(false);
         } else if (status == 201) {
           toast.error(data.message);
@@ -61,6 +62,9 @@ export default function Reset() {
             </button>
           </form>
 
+{mail && (
+  <p className="bg-blue-100 px-2 mt-3 py-1  rounded-md">{mail}</p>
+)}
           <div className="more w-fit text-center">
             <small>
               People who use our service may have uploaded your contact

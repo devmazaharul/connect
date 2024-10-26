@@ -59,7 +59,7 @@ export default function Getusers() {
            <th>Name</th>
            <th>Email</th>
            <th>Gender</th>
-     
+           <th>User status</th>
            <th>Created at</th>
            <th>Action</th>
          </tr>
@@ -71,7 +71,7 @@ export default function Getusers() {
                  <td>{user.fullname}</td>
                  <td>{user.email}</td>
                  <td>{user.gender}</td>
-     
+                 <td>{user.userStatus}</td>
                  <td>{user.createdat}</td>
                  <td><button onClick={()=>handleChange(user._id)}  className='bg-indigo-500 px-2 text-white rounded-md'>Delete</button></td>
              </tr>
